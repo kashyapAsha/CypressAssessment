@@ -1,0 +1,32 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Validating login page",
+    "line": 1,
+    "id": "validating-login-page",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "validating-login-page;login-functionality",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login functionality",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Open URL",
+            "result": {
+              "status": "undefined",
+              "duration": 408000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

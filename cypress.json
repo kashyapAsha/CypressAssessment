@@ -1,0 +1,6 @@
+{
+    "video": false,
+    "ignoreTestFiles": ["*.js", "*.md"],
+    "chromeWebSecurity": false,
+    "testFiles": "**/*.feature"
+}
