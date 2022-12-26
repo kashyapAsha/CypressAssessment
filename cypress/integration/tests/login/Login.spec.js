@@ -22,3 +22,11 @@ Then('validation message should be visible', () => {
     loginPage.successfullvalidateLogin();
 });
 
+And('Click on logout', () => {
+    loginPage.logout();
+})
+
+Then('login page should be visible', () => {
+    loginPage.validatelogout();
+})
+

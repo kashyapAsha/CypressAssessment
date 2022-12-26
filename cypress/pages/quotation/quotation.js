@@ -33,7 +33,7 @@ class quotationPage {
   static retrieveQuotation(){
     cy.go(-1)
           cy.contains("Retrieve Quotation").click()
-          //cy.get("[placeholder='identification number']").type("123")
+         // cy.get("[placeholder='identification number']").type(quotationidtxt)
           cy.get(retrieveQuote).click()
   }
 

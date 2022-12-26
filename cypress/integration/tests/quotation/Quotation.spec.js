@@ -1,7 +1,7 @@
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import loginPage from '../../../pages/login/login';
 import quotationPage from '../../../pages/quotation/quotation';
-
+var quotationid
 Given("Open URL", () => {
     cy.visit('https://demo.guru99.com/insurance/v1/index.php');
 });
@@ -24,6 +24,9 @@ And("fill required data", () => {
 
 And("save quotation", () => {
     quotationPage.saveQuotation()
+    
+    
+        
 })
 
 Then("go to retrieve quotation page", () => {
