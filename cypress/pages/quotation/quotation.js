@@ -21,21 +21,28 @@ class quotationPage {
 
   }
 
-  static saveQuotation() {
+     static saveQuotation(){
     cy.get(saveQyotation).click()
     Cypress.on('uncaught:exception', (err, runnable) => {
       return false;
     });
     cy.wait(1000) 
+    var str
+    cy.xpath("//b[text()='Your identification number is :  ']/parent::body").then(($s)=>{
+         str = $s.text()
+         var s1=str.substring(61,68)
+          cy.wrap(s1)
+        cy.go(-1)
+          cy.contains("Retrieve Quotation").click()
+         cy.get("[placeholder='identification number']").type(s1)
+          cy.get(retrieveQuote).click()
+          cy.contains('Retrieve Quotation').should('be.visible')
+    })
+    
   }
 
  
-  static retrieveQuotation(){
-    cy.go(-1)
-          cy.contains("Retrieve Quotation").click()
-         // cy.get("[placeholder='identification number']").type(quotationidtxt)
-          cy.get(retrieveQuote).click()
-  }
+  
 
 }
 

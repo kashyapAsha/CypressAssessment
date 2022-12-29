@@ -6,8 +6,8 @@ Feature: Validating Quotation
             And Click on login button
             When user click on request quotation
             And fill required data
-            And save quotation
-            Then go to retrieve quotation page
+            Then retrieve and validate quotation
+           
 
             
 
